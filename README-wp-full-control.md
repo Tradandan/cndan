@@ -1,3 +1,13 @@
+
+## **Important!**
+### **Install Git On the Instance**
+If Git is not already installed, run:
+```bash
+sudo yum install -y git   # For Amazon Linux
+sudo apt update && sudo apt install -y git   # For Ubuntu
+```
+
+
 # WordPress + MySQL Local Setup Script
 
 This script automates the setup of WordPress on a server with a self-hosted MySQL database.
@@ -8,15 +18,6 @@ This script automates the setup of WordPress on a server with a self-hosted MySQ
 - Sets up WordPress with a self-hosted MySQL database.
 - Installs and configures phpMyAdmin for database management.
 - Outputs connection details for WordPress and phpMyAdmin.
-
-##**Importent!**:
-**Install Git On the Instance**
-If Git is not already installed, run:
-bash
-Copy code
-sudo yum install -y git   # For Amazon Linux
-sudo apt update && sudo apt install -y git   # For Ubuntu
-
 
 ## How to Use
 1. **Clone the Repository**:
@@ -43,22 +44,4 @@ sudo apt update && sudo apt install -y git   # For Ubuntu
 
 5. **Access phpMyAdmin**:
    - Use the server's public IP address followed by `/phpmyadmin` to manage the database.
-
-## Configuration Details
-Will show at the end of the Run
-
-## Prerequisites
-- The script is designed for CentOS/RHEL-based systems.
-- Ensure you have sudo privileges on the server.
-
-## Notes
-- The firewall is configured to allow HTTP and HTTPS traffic.
-- Default MySQL credentials and database details can be modified by updating the script.
-
-## Troubleshooting
-- If the script fails, check the logs or error messages for details.
-- Ensure the server has internet access for downloading required packages.
-
-## Support
-For questions or issues, please contact the script's author or your system administrator.
 
