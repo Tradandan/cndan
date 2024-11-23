@@ -36,11 +36,7 @@ This script automates the setup of WordPress on a server with a self-hosted MySQ
    - Use the server's public IP address followed by `/phpmyadmin` to manage the database.
 
 ## Configuration Details
-- **MySQL Root Password**: `StrongPassword123!`
-- **Database Name**: `wordpress`
-- **Database User**: `wp_user`
-- **Database User Password**: `StrongPassword123!`
-- **Installation Directory**: `/var/www/html`
+Will show at the end of the Run
 
 ## Prerequisites
 - The script is designed for CentOS/RHEL-based systems.
