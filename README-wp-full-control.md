@@ -9,6 +9,15 @@ This script automates the setup of WordPress on a server with a self-hosted MySQ
 - Installs and configures phpMyAdmin for database management.
 - Outputs connection details for WordPress and phpMyAdmin.
 
+##**Importent!**:
+**Install Git On the Instance**
+If Git is not already installed, run:
+bash
+Copy code
+sudo yum install -y git   # For Amazon Linux
+sudo apt update && sudo apt install -y git   # For Ubuntu
+
+
 ## How to Use
 1. **Clone the Repository**:
    - Use Git to download the script:
