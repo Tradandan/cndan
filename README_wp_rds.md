@@ -12,8 +12,8 @@ This repository contains `wp-rds.sh`, a script to automate the setup of WordPres
 1. **Clone the Repository**:
    - Use Git to download the script:
      ```bash
-     git clone https://github.com/Tradandan/cndandan.git
-     cd cndandan
+     git clone https://github.com/Tradandan/cndan.git
+     cd cndan
      ```
 
 2. **Make the Script Executable**:
