@@ -1,3 +1,13 @@
+
+## **Important!**
+### **Install Git On the Instance**
+If Git is not already installed, run:
+```bash
+sudo yum install -y git   # For Amazon Linux
+sudo apt update && sudo apt install -y git   # For Ubuntu
+```
+
+
 # WordPress + RDS Setup Script
 
 This repository contains `wp-rds.sh`, a script to automate the setup of WordPress on an EC2 instance using an AWS RDS database.
@@ -30,13 +40,4 @@ This repository contains `wp-rds.sh`, a script to automate the setup of WordPres
 
 4. **Access WordPress**:
    - Once the script completes, access your WordPress site via the public IP of your EC2 instance.
-
-
-## **Important!**
-### **Install Git On the Instance**
-If Git is not already installed, run:
-```bash
-sudo yum install -y git   # For Amazon Linux
-sudo apt update && sudo apt install -y git   # For Ubuntu
-```
 
