@@ -10,19 +10,23 @@ This script automates the setup of WordPress on a server with a self-hosted MySQ
 - Outputs connection details for WordPress and phpMyAdmin.
 
 ## How to Use
-1. **Download the Script**:
-   - Save the script to your server with a `.sh` extension.
+1. **Clone the Repository**:
+   - Use Git to download the script:
+     ```bash
+     git clone https://github.com/Tradandan/cndan.git
+     cd cndan
+     ```
 
 2. **Make the Script Executable**:
-   - Run the following command to make the script executable:
+   - Ensure the script is executable by running:
      ```bash
-     chmod +x <script_name>.sh
+     chmod +x wp-full-control.sh
      ```
 
 3. **Run the Script**:
-   - Execute the script to set up WordPress:
+   - Execute the script to set up WordPress and phpMyAdmin:
      ```bash
-     sudo ./<script_name>.sh
+     sudo ./wp-full-control.sh
      ```
 
 4. **Access WordPress**:
