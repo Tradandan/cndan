@@ -10,7 +10,7 @@ sudo apt update && sudo apt install -y git   # For Ubuntu
 
 # WordPress + RDS Setup Script
 
-This repository contains `wp-rds.sh`, a script to automate the setup of WordPress on an EC2 instance using an AWS RDS database.
+This repository contains `wp-rds.sh.x`, a script to automate the setup of WordPress on an EC2 instance using an AWS RDS database.
 
 ## Features
 - Interactive prompts for RDS database details.
@@ -29,13 +29,13 @@ This repository contains `wp-rds.sh`, a script to automate the setup of WordPres
 2. **Make the Script Executable**:
    - Ensure the script is executable by running:
      ```bash
-     chmod +x wp-rds.sh
+     chmod +x wp-rds.sh.x
      ```
 
 3. **Run the Script**:
    - Execute the script and follow the interactive prompts to provide your RDS details:
      ```bash
-     ./wp-rds.sh
+     ./wp-rds.sh.x
      ```
 
 4. **Access WordPress**:
