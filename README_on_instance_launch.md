@@ -1,6 +1,6 @@
 # On Instance Launch
 
-This README provides a script that can be used as user data during an EC2 instance launch. The script automates the installation of WordPress and phpMyAdmin using the `wp-full-control.sh.x` script from your GitHub repository.
+This README provides a script that can be used as user data during an EC2 instance launch. The script automates the installation of WordPress and phpMyAdmin using the `wp-full-control.sh.x` script from GitHub repository.
 
 ## Script to Copy:
 ```bash
