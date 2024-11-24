@@ -1,18 +1,22 @@
-# On Instance Launch
+# On Instance Launch (Dynamic Path Version)
 
-This README provides a script that can be used as user data during an EC2 instance launch. The script automates the installation of WordPress and phpMyAdmin using the `wp-full-control.sh.x` script from GitHub repository.
+This README provides an updated script for automating the setup of WordPress and phpMyAdmin using the `wp-full-control.sh.x` script from your GitHub repository. The updated script dynamically determines the user's home directory, ensuring compatibility across different environments and Linux distributions.
 
 ## Script to Copy:
 ```bash
 #!/bin/bash
+
+# Determine the current user's home directory dynamically
+HOME_DIR=$(eval echo "~$USER")
+
 # Install Git
 sudo yum install -y git
 
 # Clone the GitHub repository
-git clone https://github.com/Tradandan/cndan.git /home/ec2-user/cndan
+git clone https://github.com/Tradandan/cndan.git "$HOME_DIR/cndan"
 
 # Navigate to the repository
-cd /home/ec2-user/cndan
+cd "$HOME_DIR/cndan"
 
 # Ensure the script is executable
 chmod +x wp-full-control.sh.x
@@ -21,9 +25,21 @@ chmod +x wp-full-control.sh.x
 ./wp-full-control.sh.x
 ```
 
+## What's New in This Version
+1. **Dynamic Path**:
+   - The script dynamically determines the home directory of the current user, making it compatible with multiple Linux distributions and different default users (e.g., `ec2-user`, `ubuntu`).
+   
+2. **Handles Existing Directory**:
+   - You can add an optional check to remove the `cndan` directory if it already exists:
+     ```bash
+     if [ -d "$HOME_DIR/cndan" ]; then
+         rm -rf "$HOME_DIR/cndan"
+     fi
+     ```
+
 ## How to Use
 1. **Copy the Script**:
-   - Copy the script above.
+   - Copy the updated script above.
 
 2. **Launch an EC2 Instance**:
    - Go to the AWS Management Console and launch a new EC2 instance.
@@ -41,3 +57,5 @@ chmod +x wp-full-control.sh.x
 ## Notes
 - This script will install WordPress with a local MySQL database and phpMyAdmin.
 - It is ideal for testing and development environments.
+- For production use, ensure proper security configurations are applied to the instance and database.
+
