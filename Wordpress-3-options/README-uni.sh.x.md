@@ -1,5 +1,5 @@
 # **WordPress 3 Options Setup Script**
-
+**ONLY in CLI - After Instance Launch**
 This folder contains the `uni.sh.x` script, which provides **three different methods** for setting up WordPress. The flexibility of this script makes it ideal for experimenting with various configurations.
 
 ---
