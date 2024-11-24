@@ -1,73 +1,69 @@
-## **Important!**
-### **Install Git On the Instance**
-If Git is not already installed, run:
-```bash
-sudo yum install -y git   # For Amazon Linux
-sudo apt update && sudo apt install -y git   # For Ubuntu
-```
+# **WordPress Installation Automation Scripts**
 
-# WordPress Setup Scripts
+Welcome to the **WordPress Installation Automation Repository**. This repository contains scripts to set up WordPress in different configurations, from local MySQL databases to AWS RDS and customizable options. Each folder is dedicated to a specific setup type, with detailed README files for step-by-step guidance.
 
-This repository contains two scripts for setting up WordPress:
+---
 
-1. **wp-rds.sh**: For setting up WordPress with an AWS RDS database. Ideal for learning about and using RDS.
-2. **wp-full-control.sh.x**: For a full local setup of WordPress and phpMyAdmin on an EC2 instance using a self-hosted MySQL database. Perfect for quick testing or playing with WordPress.
+## **Folders Overview**
 
-## Features
-- **Both Scripts**:
-  - Automate the setup of WordPress.
-  - Configure necessary software like Apache, PHP, and MySQL.
-  - Provide easy-to-follow prompts and clear output.
-  
-- **wp-rds.sh**:
-  - Connects WordPress to an AWS RDS database.
-  - Ideal for practicing with cloud-hosted databases.
+### 1. **Easy-WordPress-install**
+   - **Purpose**: Automates the installation of WordPress with a self-hosted MySQL database.
+   - **Features**:
+     - Installs Apache, PHP, and MySQL locally.
+     - Configures WordPress for immediate use.
+     - Includes phpMyAdmin for database management.
+   - **Key Script**: `wp-full-control.sh.x`
+   - **Read More**: [Easy WordPress Install Guide](./Easy-WordPress-install/README-wp-full-control.md)
 
-- **wp-full-control.sh**:
-  - Sets up a local MySQL database and phpMyAdmin.
-  - A fast, all-in-one solution for testing WordPress.
+---
 
-## How to Use
+### 2. **WordPress-with-RDS-AWS**
+   - **Purpose**: Automates the installation of WordPress configured to use an AWS RDS database.
+   - **Features**:
+     - Prompts for AWS RDS database details during setup.
+     - Installs Apache, PHP, and WordPress.
+     - Configures WordPress to connect seamlessly with the RDS instance.
+   - **Key Script**: `wp-rds.sh.x`
+   - **Read More**: [WordPress with RDS Guide](./WordPress-with-RDS-AWS/README_wp_rds.md)
+
+---
+
+### 3. **WordPress-3-options**
+   - **Purpose**: Provides three customizable installation options:
+     1. WordPress with a self-hosted MySQL database.
+     2. WordPress with an AWS RDS database.
+     3. WordPress with database configuration on first launch via the browser.
+   - **Features**:
+     - Interactive menu to choose the desired setup.
+     - Flexible for testing different configurations.
+   - **Key Script**: `uni.sh.x`
+   - **Read More**: [WordPress 3 Options Guide](./Wordpress-3-options/README-uni.sh.x.md)
+
+---
+
+## **Getting Started**
+
 1. **Clone the Repository**:
-   - Use Git to download the scripts:
-     ```bash
-     git clone https://github.com/Tradandan/cndan.git
-     cd cndan
-     ```
+   ```bash
+   git clone https://github.com/Tradandan/cndan.git ~/cndan
+   cd ~/cndan
+   ```
 
-2. **Make the Script Executable**:
-   - For both scripts, ensure they are executable by running:
-     ```bash
-     chmod +x wp-rds.sh wp-full-control.sh.x
-     ```
+2. **Navigate to Your Desired Folder**:
+   - `Easy-WordPress-install`
+   - `WordPress-with-RDS-AWS`
+   - `WordPress-3-options`
 
-3. **Run the Script**:
-   - Choose one of the following options based on your setup needs:
-     - **For WordPress with RDS (wp-rds.sh.x)**:
-       ```bash
-       ./wp-rds.sh.x
-       ```
-       Follow the interactive prompts to provide your RDS details.
+3. **Follow the Specific Instructions**:
+   - Each folder includes a dedicated README file with step-by-step guidance.
 
-     - **For Full Local Setup (wp-full-control.sh.x)**:
-       ```bash
-       sudo ./wp-full-control.sh.x
-       ```
+---
 
-4. **Access WordPress**:
-   - Once the script completes, access your WordPress installation using the server's public IP address.
+## **Notes**
 
-5. **Access phpMyAdmin (wp-full-control.sh only)**:
-   - Use the server's public IP address followed by `/phpmyadmin` to manage the database.
+- These scripts are designed for development and testing purposes.
+- For production use:
+  - Secure your EC2 instance and database configurations.
+  - Ensure the proper setup of AWS security groups.
 
-## Notes
-- Ensure the EC2 instance has proper permissions and access to the internet.
-- Security groups should allow HTTP, HTTPS, and database traffic as necessary.
-
-## Troubleshooting
-- Check error messages or logs if the script fails.
-- Verify internet connectivity on the instance.
-
-## Support
-For any issues or questions, contact the repository owner.
-
+---
