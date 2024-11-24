@@ -1,5 +1,5 @@
 
-## **Important THIS IS INFO ONLY ABOUT WP-FULL-CONTROL SCRIPT!**
+## **Important  INFO VIA CLI ABOUT WP-FULL-CONTROL SCRIPT!**
 
 
 ### **Install Git On the AWS-Instance**
