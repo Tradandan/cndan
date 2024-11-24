@@ -30,13 +30,13 @@ This script automates the setup of WordPress on a server with a self-hosted MySQ
 2. **Make the Script Executable**:
    - Ensure the script is executable by running:
      ```bash
-     chmod +x wp-full-control.sh
+     chmod +x wp-full-control.sh.x
      ```
 
 3. **Run the Script**:
    - Execute the script to set up WordPress and phpMyAdmin:
      ```bash
-     sudo ./wp-full-control.sh
+     sudo ./wp-full-control.sh.x
      ```
 
 4. **Access WordPress**:
