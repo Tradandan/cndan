@@ -1,6 +1,6 @@
 # On Instance Launch (Dynamic Path Version)
 
-This README provides an updated script for automating the setup of WordPress and phpMyAdmin using the `wp-full-control.sh.x` script from your GitHub repository. The updated script dynamically determines the user's home directory, ensuring compatibility across different environments and Linux distributions.
+This README provides an updated script for automating the setup of WordPress and phpMyAdmin using the `wp-full-control.sh.x` script from GitHub repository. The updated script dynamically determines the user's home directory, ensuring compatibility across different environments and Linux distributions.
 
 ## Script to Copy:
 ```bash
