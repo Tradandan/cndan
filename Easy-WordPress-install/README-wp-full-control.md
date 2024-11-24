@@ -1,8 +1,8 @@
-# On Instance Launch (Dynamic Path Version)
+# **On Instance Launch (Dynamic Path Version)**
 
 This README provides an updated script for automating the setup of WordPress and phpMyAdmin using the `wp-full-control.sh.x` script from GitHub repository. The updated script dynamically determines the user's home directory, ensuring compatibility across different environments and Linux distributions.
 
-## Script to Copy:
+## **Script to Copy**
 ```bash
 #!/bin/bash
 
@@ -25,7 +25,7 @@ chmod +x wp-full-control.sh.x
 ./wp-full-control.sh.x
 ```
 
-## What's New in This Version
+## **What's New in This Version**
 1. **Dynamic Path**:
    - The script dynamically determines the home directory of the current user, making it compatible with multiple Linux distributions and different default users (e.g., `ec2-user`, `ubuntu`).
    
@@ -37,7 +37,7 @@ chmod +x wp-full-control.sh.x
      fi
      ```
 
-## How to Use
+## **How to Use**
 1. **Copy the Script**:
    - Copy the updated script above.
 
@@ -54,8 +54,7 @@ chmod +x wp-full-control.sh.x
    - Start the instance and wait for it to initialize.
    - Check the system logs under **Monitor and Troubleshoot** > **Get System Log** to ensure the script executed successfully.
 
-## Notes
+## **Notes**
 - This script will install WordPress with a local MySQL database and phpMyAdmin.
 - It is ideal for testing and development environments.
 - For production use, ensure proper security configurations are applied to the instance and database.
-
