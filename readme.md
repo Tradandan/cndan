@@ -11,7 +11,7 @@ sudo apt update && sudo apt install -y git   # For Ubuntu
 This repository contains two scripts for setting up WordPress:
 
 1. **wp-rds.sh**: For setting up WordPress with an AWS RDS database. Ideal for learning about and using RDS.
-2. **wp-full-control.sh**: For a full local setup of WordPress and phpMyAdmin on an EC2 instance using a self-hosted MySQL database. Perfect for quick testing or playing with WordPress.
+2. **wp-full-control.sh.x**: For a full local setup of WordPress and phpMyAdmin on an EC2 instance using a self-hosted MySQL database. Perfect for quick testing or playing with WordPress.
 
 ## Features
 - **Both Scripts**:
@@ -38,20 +38,20 @@ This repository contains two scripts for setting up WordPress:
 2. **Make the Script Executable**:
    - For both scripts, ensure they are executable by running:
      ```bash
-     chmod +x wp-rds.sh wp-full-control.sh
+     chmod +x wp-rds.sh wp-full-control.sh.x
      ```
 
 3. **Run the Script**:
    - Choose one of the following options based on your setup needs:
-     - **For WordPress with RDS (wp-rds.sh)**:
+     - **For WordPress with RDS (wp-rds.sh.x)**:
        ```bash
-       ./wp-rds.sh
+       ./wp-rds.sh.x
        ```
        Follow the interactive prompts to provide your RDS details.
 
-     - **For Full Local Setup (wp-full-control.sh)**:
+     - **For Full Local Setup (wp-full-control.sh.x)**:
        ```bash
-       sudo ./wp-full-control.sh
+       sudo ./wp-full-control.sh.x
        ```
 
 4. **Access WordPress**:
