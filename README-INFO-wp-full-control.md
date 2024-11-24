@@ -1,11 +1,7 @@
 
-## **Important!**
-### **Install Git On the Instance**
-If Git is not already installed, run:
-```bash
-sudo yum install -y git   # For Amazon Linux
-sudo apt update && sudo apt install -y git   # For Ubuntu
-```
+## **Important THIS IS INFO ONLY ABOUT THE SCRIPT!**
+### **Install Git On the AWS-Instance**
+
 
 
 # WordPress + MySQL Local Setup Script
