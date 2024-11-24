@@ -1,8 +1,8 @@
 
-## **Important THIS IS INFO ONLY ABOUT THE SCRIPT!**
+## **Important THIS IS INFO ONLY ABOUT WP-FULL-CONTROL SCRIPT!**
+
+
 ### **Install Git On the AWS-Instance**
-
-
 
 # WordPress + MySQL Local Setup Script
 
